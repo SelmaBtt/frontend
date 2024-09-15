@@ -18,10 +18,10 @@
 
 #### `https://localhost:7188/api/product/${id}`
 
-### Response body:
+## Response body:
 
-<div>
- [
+```json
+[
   {
     "id": 1,
     "name": "Grönt te",
@@ -193,4 +193,4 @@
     ]
   }
 ]
-</div>
+```
