@@ -4,19 +4,19 @@
 
 ### Hämta alla kategorier:
 
-#### `https://localhost:7188/api/category`
+#### `https://storeapi20240917165254.azurewebsites.net/api/category`
 
 ### Hämta en specifik kategori:
 
-#### `https://localhost:7188/api/category/${id}`
+#### `https://storeapi20240917165254.azurewebsites.net/api/category/${id}`
 
 ### Hämta alla produkter:
 
-#### `https://localhost:7188/api/product`
+#### `https://storeapi20240917165254.azurewebsites.net/api/product`
 
 ### Hämta en specifik produkt:
 
-#### `https://localhost:7188/api/product/${id}`
+#### `https://storeapi20240917165254.azurewebsites.net/api/product/${id}`
 
 ## Response body:
 
