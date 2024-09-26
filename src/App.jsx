@@ -1,35 +1,56 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import {
+  ContactInfo,
+  ContactLink,
+  Filter,
+  SearchBar,
+  SearchResult,
+  ShowImages,
+} from "frk-4-components";
+import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const teaData = [
+    {
+      id: 1,
+      name: "Grönt te",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHfamFahLTBWDTLUKhzs6wYtrsZd5HHjmTtA&s",
+    },
+    {
+      id: 2,
+      name: "Svart te",
+      image:
+        "https://www.healthifyme.com/blog/wp-content/uploads/2020/02/Black-Tea-2-1.jpg",
+    },
+    {
+      id: 3,
+      name: "Rött te",
+      image: "https://kahlstkh.se/wp-content/uploads/2018/03/te-rooibos.jpg",
+    },
+    {
+      id: 4,
+      name: "Vitt te",
+      image:
+        "https://sakiproducts.com/cdn/shop/articles/20221107133813-white-tea-recipe-blog_800x800.jpg?v=1667828741",
+    },
+    {
+      id: 5,
+      name: "Jasmin silver needle",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxmRhyN1GjGMoEycRZfpb9b4ahFBlH_H9Vrg",
+    },
+  ];
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <ContactInfo />
+      <ContactLink />
+      <SearchBar />
+      <SearchResult /> <br />
+      <ShowImages />
+      <Filter teaData={teaData} />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
