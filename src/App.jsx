@@ -5,7 +5,7 @@ import {
   SearchBar,
   SearchResult,
   ShowImages,
-} from "frk-4-components";
+} from "@jennystarkfrk/components";
 import "./App.css";
 
 const App = () => {
