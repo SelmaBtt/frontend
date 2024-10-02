@@ -9,6 +9,7 @@ import {
 import "./App.css";
 
 const App = () => {
+  
   const teaData = [
     {
       id: 1,
@@ -45,7 +46,7 @@ const App = () => {
     <>
       <ContactInfo />
       <ContactLink />
-      <SearchBar />
+      <SearchBar teaData={teaData}/>
       <SearchResult /> <br />
       <ShowImages />
       <Filter teaData={teaData} />
