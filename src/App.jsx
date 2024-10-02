@@ -5,6 +5,9 @@ import {
   SearchBar,
   SearchResult,
   ShowImages,
+  Popup,
+  FetchTe,
+  Footer,
 } from "@jennystarkfrk/components";
 import "./App.css";
 
@@ -42,6 +45,15 @@ const App = () => {
     },
   ];
 
+  const productsData = {
+    name: "Jasmine te",
+    image: "/public/Images/teaPlaceholder.png",
+    effect:
+      "hjälper till att lugna, förbättra mental klarhet och stärka ditt immunförsvar",
+    caffeine: "Låg koffein",
+    type: "Grönt, svart & vitt",
+  };
+
   return (
     <>
       <ContactInfo />
@@ -50,6 +62,9 @@ const App = () => {
       <SearchResult /> <br />
       <ShowImages />
       <Filter teaData={teaData} />
+      <Popup productsData={productsData} />
+      <FetchTe />
+      <Footer />
     </>
   );
 };
