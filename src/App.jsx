@@ -1,6 +1,6 @@
 import {
+  Header,
   ContactInfo,
-  ContactLink,
   Filter,
   SearchBar,
   SearchResult,
@@ -56,8 +56,8 @@ const App = () => {
 
   return (
     <>
+      <Header />
       <ContactInfo />
-      <ContactLink />
       <SearchBar teaData={teaData}/>
       <SearchResult /> <br />
       <ShowImages />
