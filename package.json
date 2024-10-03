@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@jennystarkfrk/components": "^0.0.0",
+    "@jennystarkfrk/components": "^0.0.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
