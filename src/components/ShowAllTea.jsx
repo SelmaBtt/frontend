@@ -6,7 +6,7 @@ const ShowAllTea = () => {
     const [showPopup, setShowPopup] = useState(false);
 
     const exitBtnHandler = () => {
-        setShowPopup(false)
+        setShowPopup(!showPopup)
     }
 
     // Placeholder tillsvidare!!!!!!! Ta bort
@@ -21,7 +21,8 @@ const ShowAllTea = () => {
 
     return(
         <div>
-            {showPopup && <Popup productData={productsData} exitBtnHandler={exitBtnHandler}/>}
+            <button onClick={() => exitBtnHandler()}>test</button> {/* Ta bort sen! För demo anledning nu tills Components är uppdaterat */}
+            {showPopup && <Popup productsData={productsData} exitBtnHandler={exitBtnHandler}/>}
         </div>
     )
 }
