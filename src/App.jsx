@@ -1,5 +1,4 @@
 import {
-  Header,
   ContactInfo,
   Filter,
   SearchBar,
@@ -57,7 +56,6 @@ const App = () => {
 
   return (
     <>
-      <Header />
       <ShowAllTea /> {/* Ta bort sen! För demo anledning nu tills Components är uppdaterat */}
       <ContactInfo />
       <SearchBar teaData={teaData}/>
