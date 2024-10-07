@@ -30,7 +30,7 @@ jobs:
         run: echo "Successfully run"
 
       - name: discord
-        uses: sebastianpopp/discord-action@release/v2
+        uses: sebastianpopp/discord-action@releases/v2
         with: 
           webhook: ${{ secrets.DISCORD_WEBHOOK }} 
           message: ${{ github.actor }} lyckad push till main i frontend repo
